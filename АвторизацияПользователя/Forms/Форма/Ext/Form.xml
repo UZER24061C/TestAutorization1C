@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Group>AlwaysHorizontal</Group>
+	<HorizontalAlign>Center</HorizontalAlign>
+	<VerticalAlign>Center</VerticalAlign>
+	<Scale>150</Scale>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Общая" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авторизуйтесь или зарегистрируйтесь для продолжения</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#EE9086</TitleTextColor>
+			<TitleFont ref="style:LargeTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Left</HorizontalAlign>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ОбщаяРасширеннаяПодсказка" id="18"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="21">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<LabelField name="Пользователь" id="14">
+							<DataPath>Пользователь</DataPath>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="16"/>
+						</LabelField>
+						<Button name="Стереть" id="19">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<CommandName>Form.Command.Стереть</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="СтеретьРасширеннаяПодсказка" id="20"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПоискПользователяПоНомеруТелефона" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск пользователя по номеру телефона</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск пользователя по номеру телефона</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПоискПользователяПоНомеруТелефонаРасширеннаяПодсказка" id="7"/>
+					<ChildItems>
+						<InputField name="НомерТелефона" id="1">
+							<DataPath>НомерТелефона</DataPath>
+							<Mask>+7 (999) 999-99-99</Mask>
+							<ContextMenu name="НомерТелефонаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НомерТелефонаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<Button name="Найти" id="4">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Найти</CommandName>
+							<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="5"/>
+						</Button>
+						<Button name="СоздатьНовогоПользователя" id="8">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьНовогоПользователя</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Зарегистрироваться</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СоздатьНовогоПользователяРасширеннаяПодсказка" id="9"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="КнопкаДалее" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопка далее</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопка далее</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КнопкаДалееРасширеннаяПодсказка" id="13"/>
+					<ChildItems>
+						<Button name="ЛичныйКабинет" id="23">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<CommandName>Form.Command.ЛичныйКабинет</CommandName>
+							<ExtendedTooltip name="ЛичныйКабинетРасширеннаяПодсказка" id="24"/>
+						</Button>
+						<Button name="Продолжить" id="10">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.Продолжить</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сделать заказ</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПродолжитьРасширеннаяПодсказка" id="11"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalReportObject.АвторизацияПользователя</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="НомерТелефона" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер телефона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>22</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пользователь" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Клиенты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Найти" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиКлиента</Action>
+		</Command>
+		<Command name="СоздатьНовогоПользователя" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать нового пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать нового пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовогоПользователя</Action>
+		</Command>
+		<Command name="Продолжить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПродолжитьЗаказ</Action>
+		</Command>
+		<Command name="Стереть" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стереть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Стереть</Action>
+		</Command>
+		<Command name="ЛичныйКабинет" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Личный кабинет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Личный кабинет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЛичныйКабинет</Action>
+		</Command>
+	</Commands>
+</Form>
